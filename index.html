@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Download Novu CBT</title>
-<meta name="description" content="Download Novu CBT for Windows. Run computer-based exams on your school's own network, with no internet needed during the exam.">
+<meta name="description" content="Download Novu CBT for Windows. Computer-based exams on your school's local network, with no internet required.">
 <meta name="color-scheme" content="light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,7 +230,17 @@
   .req-grid li { margin: 0 0 6px; }
   .req-grid li::marker { color: var(--teal); }
 
-  /* Help */
+  /* Statement between the install steps and the Windows warning */
+  .statement { background: var(--card); }
+  .statement p {
+    margin: 0;
+    max-width: 60ch;
+    color: var(--ink);
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    line-height: 1.5;
+  }
+
+  /* Troubleshooting */
   .help { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 48px; }
   .help p { margin: 0 0 8px; }
 
@@ -276,7 +286,7 @@
     <nav aria-label="Page sections">
       <a href="#install">Install</a>
       <a href="#requirements">Requirements</a>
-      <a href="#help">Help</a>
+      <a href="#help">Troubleshooting</a>
     </nav>
   </div>
 </header>
@@ -286,8 +296,8 @@
   <div class="hero">
     <div class="wrap">
       <div>
-        <h1>Computer-based exams on your school's own network</h1>
-        <p class="lead">Install Novu CBT on one computer. Students sit their exams from any laptop, tablet or desktop on the same Wi-Fi or cable network, with no internet needed during the exam.</p>
+        <h1>Computer-based exams. No internet required.</h1>
+        <p class="lead">Make digital examinations simpler and more accessible with Novu CBT. Run exams directly on your school’s local network without relying on internet connectivity.</p>
 
         <div class="download-row">
           <a class="btn" id="download-btn"
@@ -351,7 +361,7 @@
             <text x="66" y="17.5" text-anchor="middle" font-family="Atkinson Hyperlegible, sans-serif" font-size="12" font-weight="700" fill="#1F6E5C">No internet needed</text>
           </g>
         </svg>
-        <figcaption>Students open the exam computer's address in their browser. Nothing to install on their devices.</figcaption>
+        <figcaption>One computer. Multiple student devices. No internet required.</figcaption>
       </figure>
     </div>
   </div>
@@ -359,8 +369,8 @@
   <!-- Install steps -->
   <section id="install">
     <div class="wrap">
-      <h2>Install in three steps</h2>
-      <p class="section-intro">Do this once, on the computer that will hold your exams.</p>
+      <h2>Get started in three simple steps</h2>
+      <p class="section-intro">Everything you need to run computer-based exams on your school’s local network.</p>
       <ol class="steps">
         <li>
           <h3>Download and run the installer</h3>
@@ -375,6 +385,13 @@
           <p>Novu shows its address on the Overview screen. Students type that address into a browser on the same network and sign in to their exam.</p>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- Why Novu -->
+  <section class="statement" aria-label="Why Novu CBT">
+    <div class="wrap">
+      <p>Internet connectivity shouldn’t stand in the way of delivering computer-based examinations. Whether you’re managing assessments in a school or running a CBT centre, Novu CBT gives you a practical way to administer exams using your local network.</p>
     </div>
   </section>
 
@@ -440,10 +457,10 @@
     </div>
   </section>
 
-  <!-- Help -->
+  <!-- Troubleshooting -->
   <section id="help">
     <div class="wrap">
-      <h2>Help</h2>
+      <h2>Troubleshooting</h2>
       <p class="section-intro">Answers to the questions schools ask most.</p>
       <div class="help">
         <div>
